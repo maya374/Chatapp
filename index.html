@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <h2>💬 Local Chat App</h2>
+    <div class="chat-box" id="chatBox"></div>
+    
+    <div class="input-area">
+      <select id="userSelect">
+        <option value="User1">User1</option>
+        <option value="User2">User2</option>
+      </select>
+      <input type="text" id="messageInput" placeholder="Type your message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+    
+    <div class="options">
+      <button id="clearBtn" onclick="clearChat()">🗑️ Clear Chat</button>
+      <!-- Optional: Light/Dark theme -->
+      <!-- <button onclick="toggleTheme()">🌗 Toggle Theme</button> -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
